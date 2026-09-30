@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Prolog Fácil</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<main>
+  <header><span class="logo">?-</span><div><h1>Prolog Fácil</h1><p>Prueba hechos, reglas y preguntas paso a paso.</p></div></header>
+  <section class="examples" aria-labelledby="examples-title"><h2 id="examples-title">1. Elige un ejemplo</h2><div id="examples"></div></section>
+  <section><div class="heading"><div><h2>2. Hechos y reglas</h2><p>Un punto termina cada frase.</p></div><label class="file">Cargar .pl<input id="file" type="file" accept=".pl,.pro,.txt"></label></div><textarea id="source" spellcheck="false" aria-label="Hechos y reglas"></textarea></section>
+  <section><h2>3. Haz una consulta</h2><div class="query-row"><span>?-</span><input id="query" aria-label="Consulta" spellcheck="false"><button id="run">Ejecutar</button><button id="stop" class="secondary" disabled>Detener</button></div><details><summary>Límites de seguridad</summary><div class="limits"><label>Máximo de resultados <input id="limit" type="number" min="1" max="200" value="20"></label><label>Tiempo máximo (segundos) <input id="timeout" type="number" min="0.1" max="30" step="0.1" value="3"></label></div></details></section>
+  <section class="results" aria-live="polite"><h2>Resultados</h2><div id="status" class="empty">Pulsa «Ejecutar» para ver las respuestas.</div><div id="results"></div></section>
+</main><script src="app.js"></script>
+</body></html>

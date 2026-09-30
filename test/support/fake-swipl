@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+const query = process.argv.at(-2);
+if (query === 'hang') setTimeout(() => {}, 60_000);
+else if (query.startsWith('syntax')) console.log(JSON.stringify({ error: { kind: 'syntax', message: 'Hay un error de sintaxis.' } }));
+else if (query.startsWith('none')) console.log(JSON.stringify({ solutions: [], limited: false }));
+else if (query.startsWith('many')) console.log(JSON.stringify({ solutions: [{ X: 'rojo' }, { X: 'verde' }, { X: 'azul' }], limited: false }));
+else console.log(JSON.stringify({ solutions: [{ X: 'rojo' }], limited: false }));

@@ -1,0 +1,11 @@
+{
+  "name": "prolog-facil",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interfaz educativa y segura para SWI-Prolog",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" }
+}
